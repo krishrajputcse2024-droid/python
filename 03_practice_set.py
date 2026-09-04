@@ -1,95 +1,80 @@
-# muliplication of number usng for loop
-# n = int(input("enter a number"))
-# for i in range(1,11):
-#     print( n," x",i, "=",n*i)
 
+# Write a program using functions to find greatest of three numbers.
 
-
-
-# Write a program to greet all the person names stored in a list ‘l’ and which starts with S.
-# l = ["Harry", "Soham", "Sachin", "Rahul","shubham"]
-# for name in l:
-#   if name.startswith("S"):
-#     print("hello",name)
-
-
-
-
-# n = int(input("enter a number: "))
-# i=1
-# while i<=10:
-#     print(n ,"x",i ,"=", i*n)
-#     i = i+1
-
-
-
-# prime or not
-# n = int(input("enter a number: "))
-# for i in range(2,n):
-#     if n%i==0:
-#         print("not a prime no")
-#         break
-# else:
-#         print("prime number")
-
-
-
-# n = int(input("enter a number : "))
-# fact = 1
-# for i in range(1, n+1):
-#     fact=fact*n
-#     print("fact", fact)
-
-
-
-
-
-
-
-# n = int(input("Enter number: "))
-
-# i = 1
-# total = 0
-
-# while i <= n:
-#     total += i
-#     i += 1
-
-# print("Sum =", total)
-
-
-
-
-
-''' 
-  *
- ***
-*****
-for n = 3
-'''
-
-
-'''n = int(input("enter a number: "))
-for i in range(1,n+1):
-
-  print(" "*(n-i),end ="")
-  print("*" *(2*i-1) , end="")
-  print("\n")
-  '''
-  
-  
-  
-'''n = int(input("enter a number:"))
-for i in range(1,n+1):
-    print(""*(n-1),end="")
-    print("*"*i, end="")
-    print("\n")'''
+'''def greatest(a , b , c):
+    if(a>b and a>c):
+        return a
+    elif(b>a and b>c):
+        return b
+    elif(c>b and c>a):
+        return c
+a = int(input("Enter a number:"))
+b = int(input("Enter a number:"))
+c = int(input("Enter a number:"))
+print(greatest(a , b , c))'''
     
     
-n = 3
+    
+    
+    
+    # Write a python program using function to convert Celsius to Fahrenheit.
+'''def conver_to_celsius(cel):
+   return (cel*9/5) + 32
+cel = int(input("enter a temperature: "))
+print(conver_to_celsius(cel))'''
 
-for i in range(1, n + 1):
-    if i % 2 != 0:      # odd row
-        print("* " * n)
-    else:               # even row
-        print("* " * (n - 1))
+
+
+
+# How do you prevent a python print() function to print a new line at the end.
+'''print("hello" ,end=" ")
+print("world")'''
+
+
+# . Write a recursive function to calculate the sum of first n natural numbers
+'''def num(n):
+    if(n==0):
+        return 0
+    return num(n-1) + n
+n = int(input("Enter a Number:"))
+print(num(n))'''
+
+
+
+
+
+# . Write a python function to print first n lines of the following pattern.
+# ***
+# **
+# *
+# - for n = 3
+# #
+
+
+'''def pattern(n):
+    if(n==0):
+        return
+    print("*" * n)
+    pattern(n-1)
+
+pattern(3)'''
+
+
+
+# Write a python function which converts inches to cms
+
+'''def inch_to_cms(inch):
+    return inch*2.54
+n = int(input("enter a number : "))
+print(inch_to_cms(n))'''
+
+
+
+
+# Write a python function to print multiplication table of a given number.
+'''def multiplication(n):
+    for i in range(1 , 11):
+        print(n ,"x" ,i ,"=",n*i)
+        n= int(input("Enter a Number:"))
+        multiplication(n)'''
+        
